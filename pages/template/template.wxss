@@ -1,0 +1,110 @@
+
+.scroll{
+	background-color:#aff;
+}
+
+.inner{
+	height:500px;
+}
+
+
+/*头像*/
+.head{
+	width:720rpx;
+	height:90rpx;
+	display:flex;
+	justify-content:center;
+}
+
+
+.picture{
+	width:90rpx;
+	height:90rpx;
+	border-radius:95%;
+}
+
+
+.Outter,.Input,.Middle{
+	width:680rpx;
+
+}
+
+/*外边框*/
+.Outter{	
+	margin-bottom:0px;
+	margin-left:35rpx;
+	height:640rpx;
+	border-radius:5%;
+	border:1px solid #CD919E;   /*整个边框颜色大小*/
+}
+
+
+/*对话框*/
+.Input1,.Input2,.Input3,.Input4
+{
+	height:540rpx;
+	font-family:宋体;
+	font-weight:light;
+	color:#F08080;  /*字体颜色*/
+	border-bottom:1px solid #CD919E;  /*对话边框颜色大小*/
+	border-top-left-radius:5%;
+	border-top-right-radius:5%;
+}
+
+.Input1{	
+	background: repeating-linear-gradient(#E0FFFF,#FDF5E6,#FFFACD,#FFE4E1,#FFC1C1);	
+}
+
+.Input2{
+	background: repeating-linear-gradient(#FFE4E1,#FFFFE0,#D1EEEE,#CAE1FF);	
+}
+
+.Input3{
+	background: repeating-linear-gradient(#FFFFE0,#E5E5E5,#EEE5DE,#EED5D2);
+}
+
+.Input4{	
+	background: repeating-linear-gradient(#FFFFE0,#E0FFFF,#CAE1FF,#C1CDCD);	
+}
+
+/*操作区*/
+.Middle{	
+	height:45px;
+	display:flex;
+	flex-direction:row;
+}
+
+.left{
+	width:50px;
+}
+
+.right{
+    width:240px;
+    display:flex;
+	flex-direction:row;
+}
+
+
+
+/*显示数据*/
+.views{
+	font-size:13px;
+	color:#919191;
+	margin-left:8px;
+	margin-top:2px;
+}
+
+
+/*选择器*/
+.Button1,.Button2,.Button3{
+	width:36px;
+	height:36px;
+	padding-left:0px;
+}
+
+
+image{
+	width:36px;
+	height:36px;
+}
+

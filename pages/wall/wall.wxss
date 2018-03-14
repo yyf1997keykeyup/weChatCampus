@@ -1,0 +1,26 @@
+@import "/pages/template/template.wxss";
+
+
+
+.wall_pink,.wall_blue,.wall_yellow,.wall_green{
+	border-top:20px solid #fff;
+	border-bottom:20px solid #fff;
+}
+
+
+.box1{
+	width:240rpx;
+	height:68rpx;	
+	border-radius:4%;
+	background-color:#FFEFDB;
+	border:2px solid #dfdfdf;
+	margin-left:255rpx;
+	margin-top:20rpx;
+}
+
+.send{
+	color:#4682B4; 
+	font-weight:bold;
+	font-size:13px; 
+	margin:30rpx;
+}

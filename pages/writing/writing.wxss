@@ -1,0 +1,68 @@
+.Outter{
+	width:747rpx;
+	height:1177rpx;
+	border:2px solid #CD919E;  /*对话边框颜色大小*/
+}
+
+
+.page{
+	width:750rpx;
+	height:50%;
+	font-family:宋体;
+	font-weight:light;
+	color:#F08080;  /*字体颜色*/
+	border-bottom:40px solid #F7F7F7;  /*对话底部边框颜色大小*/
+}
+
+
+.Middle{
+	width:100%;
+	height:6%;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;	
+}
+
+.left{
+	width:70%;
+	height:71rpx;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;	
+}
+
+.pink,.blue,.yellow,.green{
+	width:50rpx;
+	height:76%;
+	margin-top:11rpx;
+}
+
+.pink{
+	background:repeating-linear-gradient(#E0FFFF,#FDF5E6,#FFFACD,#FFE4E1,#FFC1C1);
+}
+
+.blue{
+	background:repeating-linear-gradient(#FFE4E1,#FFFFE0,#D1EEEE,#CAE1FF);	
+}
+
+.yellow{
+	background:repeating-linear-gradient(#FFFFE0,#E5E5E5,#EEE5DE,#EED5D2);
+}
+
+.green{
+	background:repeating-linear-gradient(#FFFFE0,#E0FFFF,#CAE1FF,#C1CDCD);	
+}
+
+
+.right{
+	width:30%;
+	height:90%;
+
+}
+
+
+.Down{
+	width:100%;
+	height:37%;
+	background-color:#F7F7F7;
+}

@@ -1,0 +1,197 @@
+/*下拉加载器*/
+<template name="scroll"> 
+  <view class="page">
+    <scroll class="scroll" scroll-y="{{true}}" style="height:300px" scroll-top="100" bindscrolltoupper="upper" bindscrolltolower="lower">
+    <view class="inner"></view>
+    </scroll>
+  </view>
+</template>
+
+
+/*对话框1*/
+<template name="wall_pink">
+  <!--显示头像-->
+  <view class="head">
+    <image src="/pages/image/one.jpg" class="picture"></image>
+  </view>
+
+  <view class="Outter">
+
+    <!--显示内容-->
+    <view class="Input1">
+    </view>
+
+    <view class="Middle">
+    <view class="left">
+      <!--显示点赞次数-->
+      <view class="views">
+        {{liking}}{{number1}}  
+      </view>
+
+      <!--显示评论次数-->
+      <view class="views">
+        {{commention}}{{number2}}   
+      </view>
+    </view>
+    <view class="right">
+      <!--设置转发图标-->
+      <button class="Button1" bindtap="tranpond">
+          <image src="/pages/icon/转发.png" />
+        </button>
+
+      <!--设置评论图标-->
+      <button class="Button2" bindtap="comment">
+          <image src="/pages/icon/评论.png" /> 
+        </button>
+        
+      <!--设置点赞图标-->
+      <button class="Button3" bindtap="like">
+        <image src="/pages/icon/点赞.png" />
+      </button>
+  
+    </view>
+    </view>
+  </view>
+</template>
+
+
+/*对话框2*/
+<template name="wall_blue">
+
+  <!--显示头像-->
+  <view class="head">
+    <image src="/pages/image/two.jpeg" class="picture"></image>
+  </view>
+
+  <view class="Outter">
+
+    <!--显示内容-->
+    <view class="Input2">
+    </view>
+
+    <view class="Middle">
+    <view class="left">
+      <!--显示点赞次数-->
+      <view class="views">
+        {{liking}}{{number1}}  
+      </view>
+
+      <!--显示评论次数-->
+      <view class="views">
+        {{commention}}{{number2}}   
+      </view>
+    </view>
+    <view class="right">
+      <!--设置转发图标-->
+      <button class="Button1" bindtap="tranpond">
+          <image src="/pages/icon/转发.png" />
+        </button>
+
+      <!--设置评论图标-->
+      <button class="Button2" bindtap="comment">
+          <image src="/pages/icon/评论.png" /> 
+        </button>
+        
+      <!--设置点赞图标-->
+      <button class="Button3" bindtap="like">
+        <image src="/pages/icon/点赞.png" />
+      </button>
+    </view>
+    </view>
+  </view>
+</template>
+
+
+/*对话框3*/
+<template name="wall_yellow">
+
+  <!--显示头像-->
+  <view class="head">
+    <image src="/pages/image/three.jpeg" class="picture"></image>
+  </view>
+
+  <view class="Outter">
+
+    <!--显示内容-->
+    <view class="Input3">
+    </view>
+
+    <view class="Middle">
+    <view class="left">
+      <!--显示点赞次数-->
+      <view class="views">
+        {{liking}}{{number1}}  
+      </view>
+
+      <!--显示评论次数-->
+      <view class="views">
+        {{commention}}{{number2}}   
+      </view>
+    </view>
+    <view class="right">
+      <!--设置转发图标-->
+      <button class="Button1" bindtap="tranpond">
+          <image src="/pages/icon/转发.png" />
+        </button>
+
+      <!--设置评论图标-->
+      <button class="Button2" bindtap="comment">
+          <image src="/pages/icon/评论.png" /> 
+        </button>
+        
+      <!--设置点赞图标-->
+      <button class="Button3" bindtap="like">
+        <image src="/pages/icon/点赞.png" />
+      </button>
+    </view>
+    </view>
+  </view>
+</template>
+
+
+
+/*对话框4*/
+<template name="wall_green">
+
+  <!--显示头像-->
+  <view class="head">
+    <image src="/pages/image/four.jpeg" class="picture"></image>
+  </view>
+
+  <view class="Outter">
+
+    <!--显示内容-->
+    <view class="Input4">
+    </view>
+
+      <view class="Middle">
+      <view class="left">
+        <!--显示点赞次数-->
+        <view class="views">
+             {{liking}}{{number1}}  
+        </view>
+
+        <!--显示评论次数-->
+        <view class="views">
+            {{commention}}{{number2}}   
+        </view>
+      </view>
+      <view class="right">
+      <!--设置转发图标-->
+      <button class="Button1" bindtap="tranpond">
+          <image src="/pages/icon/转发.png" />
+        </button>
+
+      <!--设置评论图标-->
+      <button class="Button2" bindtap="comment">
+          <image src="/pages/icon/评论.png" /> 
+        </button>
+        
+      <!--设置点赞图标-->
+      <button class="Button3" bindtap="like">
+        <image src="/pages/icon/点赞.png" />
+      </button>
+      </view>
+      </view>
+  </view>  
+</template>

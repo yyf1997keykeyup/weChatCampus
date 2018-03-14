@@ -1,0 +1,33 @@
+<!--这是写新的帖子的网页-->
+
+<view class="Outter">
+
+	<!--编辑部份-->
+	<view class="page" style="background-color:{{pagebackgroundColor}}">
+		<input 
+		  style="word-break:keep-all"
+    	  value="{{content}}" 
+    	  type="text" 
+     	  placeholder="请输入内容..."
+     	  focus="{{false}}"
+    	  comfirm-hold="{{false}}">
+   		</input>
+	</view>
+		
+
+	<!--属性部分-->
+	<view class="Middle">
+		<view class="left">
+			<button class="pink" bindtap="change_pink"></button>
+			<button class="blue" bindtap="change_blue"></button>
+			<button class="yellow" bindtap="change_yellow"></button>
+			<button class="green" bindtap="change_green"></button>
+		</view>
+		<view class="right">
+			匿名<switch checked="{{false}}" bindchange="change"/>
+		</view>	
+	</view>
+
+	<!--不可编辑部份-->
+	<view class="Down"></view>
+</view>

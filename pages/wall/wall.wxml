@@ -1,0 +1,49 @@
+<!--引入模板文件-->
+<import src="/pages/template/template.wxml" />
+
+
+<!--发布新帖-->
+<view class="box1">
+   	<navigator url="/pages/writing/writing" >
+   	<text class="send" >来吐槽一下吧</text>
+  	</navigator>
+</view>
+
+<!--使用模板-->
+<view class="wall_pink">
+	<template is="wall_pink" data="{{...item}}" />
+</view>
+<view class="wall_blue">
+	<template is="wall_blue" data="{{...item}}" />
+</view>
+<view class="wall_yellow">
+	<template is="wall_yellow" data="{{...item}}" />
+</view>
+<view class="wall_green">
+	<template is="wall_green" data="{{...item}}" />
+</view>
+<view class="wall_blue">
+	<template is="wall_blue" data="{{...item}}" />
+</view>
+<view class="wall_blue">
+	<template is="wall_blue" data="{{...item}}" />
+</view>
+<view class="wall_yellow">
+	<template is="wall_yellow" data="{{...item}}" />
+</view>
+<view class="wall_green">
+	<template is="wall_green" data="{{...item}}" />
+</view>
+<view class="wall_pink">
+	<template is="wall_pink" data="{{...item}}" />
+</view>
+<view class="wall_pink">
+	<template is="wall_pink" data="{{...item}}" />
+</view>
+<view class="wall_pink">
+	<template is="wall_pink" data="{{...item}}" />
+</view>
+<view class="wall_yellow">
+	<template is="wall_yellow" data="{{...item}}" />
+</view>
+

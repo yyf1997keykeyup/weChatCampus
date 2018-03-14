@@ -1,0 +1,31 @@
+@import "/pages/template/template.wxss";
+
+.delete{
+	width:40px;
+	height:40px;
+	background-color:#fff;
+}
+
+
+image{
+	width:80rpx;
+	height:80rpx;
+	margin-left:-10px
+}
+
+
+.checkbox-group{
+	width:320px;
+	margin-top:0px;
+	margin-right:-5px;
+}
+
+.checkbox{
+	width:320px;
+}
+
+.wall_pink,.wall_blue,.wall_yellow,.wall_green{
+	border-top:20px solid #fff;
+	border-bottom:20px solid #fff;
+}
+

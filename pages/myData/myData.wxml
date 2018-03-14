@@ -1,0 +1,33 @@
+<!--引入模板文件-->
+<import src="/pages/template/template.wxml" />
+
+<!--删除对话框-->
+<view>
+  <button class="delete" bindtap="delete">
+    <image src="/pages/icon/删除.png" />
+  </button>
+</view>
+
+<!--使用模板-->
+<checkbox-group class="checkbox-group">
+  <checkbox class="checkbox">
+    <view class="wall_pink">
+      <template is="wall_pink" data="{{...item}}" />
+    </view>
+  </checkbox>
+  <checkbox class="checkbox">
+    <view class="wall_blue">
+      <template is="wall_blue" data="{{...item}}" />
+    </view>
+  </checkbox>
+  <checkbox class="checkbox">
+    <view class="wall_yellow">
+      <template is="wall_yellow" data="{{...item}}" />
+    </view>
+  </checkbox>
+  <checkbox class="checkbox">
+    <view class="wall_green">
+      <template is="wall_green" data="{{...item}}" />
+    </view>
+  </checkbox>
+</checkbox-group>
