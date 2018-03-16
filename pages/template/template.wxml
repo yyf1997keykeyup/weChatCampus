@@ -19,6 +19,9 @@
 
     <!--显示内容-->
     <view class="Input1">
+      <view class="comment">
+      {{comment1}}
+      </view>
     </view>
 
     <view class="Middle">

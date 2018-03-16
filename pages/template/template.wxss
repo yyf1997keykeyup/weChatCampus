@@ -49,6 +49,18 @@
 	border-bottom:1px solid #CD919E;  /*对话边框颜色大小*/
 	border-top-left-radius:5%;
 	border-top-right-radius:5%;
+
+  display: flex;
+  align-content: center;
+}
+
+.comment{
+  margin: 10% 6% 10% 5%;
+  height: 150 px;
+
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
 }
 
 .Input1{	

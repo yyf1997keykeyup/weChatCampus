@@ -4,7 +4,8 @@ Page({
 			liking:"赞",
 			commention:"评论",
 			number1:12,
-			number2:5
+			number2:5,
+      comment1:"内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容"
 		},
 		item2:''
 	},
