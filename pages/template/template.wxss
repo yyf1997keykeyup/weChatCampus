@@ -31,22 +31,26 @@
 
 /*外边框*/
 .Outter{	
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+
 	margin-bottom:0px;
 	margin-left:35rpx;
-	height:640rpx;
+	/* height:640rpx; */
 	border-radius:5%;
 	border:1px solid #CD919E;   /*整个边框颜色大小*/
 }
 
 
 /*对话框*/
-.Input1,.Input2,.Input3,.Input4
+.Input
 {
-	height:540rpx;
+	/* height:540rpx; */
 	font-family:宋体;
 	font-weight:light;
 	color:#F08080;  /*字体颜色*/
 	border-bottom:1px solid #CD919E;  /*对话边框颜色大小*/
+  background: #F5DEB3;
 	border-top-left-radius:5%;
 	border-top-right-radius:5%;
 
@@ -54,16 +58,44 @@
   align-content: center;
 }
 
-.comment{
-  margin: 10% 6% 10% 5%;
-  height: 150 px;
-
-  white-space:nowrap;
-  overflow:hidden;
-  text-overflow:ellipsis;
+/* 短文本（或收起时）的单条长度 */
+.shortInput
+{
+    height:300rpx;
+}
+/* 长文本长度时的单条长度 */
+.longInput
+{
+    height:400rpx;
 }
 
-.Input1{	
+.comment{
+  margin: 10% 6% 0% 5%; 
+  height: 60 px;
+  padding: 0 10px;
+  display: -webkit-box;
+}
+
+/* 文字内容 CSS，应用了-webkit-line-clamp：实现text文本溢出多行省略 */
+.lineClamp{
+
+  word-break: break-all; 
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+/* “更多内容”&“收起”的文本 */
+.moreText{
+    margin: 0% 6% 0% 5%;
+    padding: 0 10px; 
+    color:red;
+    font-weight: bold;
+}
+
+/* 彩虹背景 */
+ .Input1{	
 	background: repeating-linear-gradient(#E0FFFF,#FDF5E6,#FFFACD,#FFE4E1,#FFC1C1);	
 }
 
@@ -77,46 +109,39 @@
 
 .Input4{	
 	background: repeating-linear-gradient(#FFFFE0,#E0FFFF,#CAE1FF,#C1CDCD);	
-}
+} 
 
 /*操作区*/
-.Middle{	
+.operation{	
 	height:45px;
 	display:flex;
 	flex-direction:row;
-}
-
-.left{
-	width:50px;
-}
-
-.right{
-    width:240px;
-    display:flex;
-	flex-direction:row;
+  justify-content:flex-end;
 }
 
 
-
-/*显示数据*/
+/*显示操作区数据*/
 .views{
-	font-size:13px;
+	font-size:15px;
 	color:#919191;
-	margin-left:8px;
 	margin-top:2px;
+  margin-right:8px;
 }
 
 
-/*选择器*/
+/*按钮*/
 .Button1,.Button2,.Button3{
-	width:36px;
-	height:36px;
+
+	width:30px;
+	height:30px;
 	padding-left:0px;
+  margin: 5px 5px 5px 5px;
+
 }
 
-
+/*操作区图片*/
 image{
-	width:36px;
-	height:36px;
+	width:30px;
+	height:30px;
 }
 

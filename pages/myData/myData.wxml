@@ -15,7 +15,7 @@
       <template is="wall_pink" data="{{...item}}" />
     </view>
   </checkbox>
-  <checkbox class="checkbox">
+   <checkbox class="checkbox">
     <view class="wall_blue">
       <template is="wall_blue" data="{{...item}}" />
     </view>
@@ -29,5 +29,5 @@
     <view class="wall_green">
       <template is="wall_green" data="{{...item}}" />
     </view>
-  </checkbox>
+  </checkbox> 
 </checkbox-group>

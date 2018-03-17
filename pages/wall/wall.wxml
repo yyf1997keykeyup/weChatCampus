@@ -9,41 +9,50 @@
   	</navigator>
 </view>
 
-<!--使用模板-->
-<view class="wall_pink">
-	<template is="wall_pink" data="{{...item}}" />
-</view>
-<view class="wall_blue">
-	<template is="wall_blue" data="{{...item}}" />
-</view>
-<view class="wall_yellow">
-	<template is="wall_yellow" data="{{...item}}" />
-</view>
-<view class="wall_green">
-	<template is="wall_green" data="{{...item}}" />
-</view>
-<view class="wall_blue">
-	<template is="wall_blue" data="{{...item}}" />
-</view>
-<view class="wall_blue">
-	<template is="wall_blue" data="{{...item}}" />
-</view>
-<view class="wall_yellow">
-	<template is="wall_yellow" data="{{...item}}" />
-</view>
-<view class="wall_green">
-	<template is="wall_green" data="{{...item}}" />
-</view>
-<view class="wall_pink">
-	<template is="wall_pink" data="{{...item}}" />
-</view>
-<view class="wall_pink">
-	<template is="wall_pink" data="{{...item}}" />
-</view>
-<view class="wall_pink">
-	<template is="wall_pink" data="{{...item}}" />
-</view>
-<view class="wall_yellow">
-	<template is="wall_yellow" data="{{...item}}" />
-</view>
 
+
+<!-- 不使用模板 -->
+<view>
+  <!--显示头像-->
+  <view class="head">
+    <image src="/pages/image/one.jpg" class="picture"></image>
+  </view>
+
+  <view class="Outter">
+
+    <!--显示内容-->
+    <view class="Input {{isMoreText?'longInput':'shortInput'}}">
+      <view>
+      <text class="comment {{isMoreText?'':'lineClamp'}}">{{comment}}</text>
+      <view class="moreText" bindtap="moreText">{{addOrCut}}</view>
+      </view>
+    </view>
+
+    <view class="operation">
+
+        <!--设置点赞图标-->
+        <button class="Button1" bindtap="like">
+          <image src="/pages/icon/点赞.png" />
+        </button>
+        <view class="views">
+        {{likeNum}}  
+        </view>
+
+        <!--设置转发图标-->
+        <button class="Button2" bindtap="tranpond">
+          <image src="/pages/icon/转发.png" />
+        </button>
+        <view class="views">
+        0   
+      </view>
+
+        <!--设置评论图标-->
+        <button class="Button3" bindtap="comment">
+          <image src="/pages/icon/评论.png" /> 
+        </button>
+        <view class="views">
+        {{commentNum}}   
+      </view>
+    </view>
+  </view>
+</view>
